@@ -39,6 +39,6 @@ while True:
             conf = math.ceil((box.conf[0] * 100)) / 100
             # Class Name
             cls = int(box.cls[0])
-            cvzone.putTextRect(img, f'{classNames[cls]} {conf}', (max(0, x1), max(35, y1)))
+            cvzone.putTextRect(img, f'{classNames[cls]} {conf}', (max(0, x1), max(35, y1)), scale=0.7, thickness=1)
     cv2.imshow("Image", img)
     cv2.waitKey(1)
